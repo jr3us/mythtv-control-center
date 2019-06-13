@@ -1,0 +1,200 @@
+# Mythbuntu Control Centre
+# By: Mario Limonciello
+
+---                                  ---
+-- What's this wonderful application? --
+---                                  ---
+This application is used for managing administration tasks on a Mythbuntu
+system.  It aims to remove the command line requirement typically involved
+with working on a Mythbuntu box.
+
+It has been developed with a "Fully Pluggable" architecture.  This means
+that all functionality is actually configurable by the plugins that get
+installed in the standard location rather than with the core application.
+
+This allows developers to create their own sets of plugins to be used
+with the Control Centre.
+
+---                    ---
+-- Architecture Defined --
+---                    ---
+The MCC (aka Mythbuntu Control Centre) is a client/server application
+with the server and client intended to run on the same machine.  The two
+components contact one another via dbus with authentication from
+PolicyKit.  This allows the frontend and all GUI functionality to run
+as a userspace process.  The backend is spawned using dbus service
+activation as necessary.  When inactive for a pre-defined time, the
+backend will stop itself and only respawn when requested by the
+frontend.
+
+The intention behind this architecture definition is to abstract the
+developer from having to spend time re-inventing processes that are
+likely already in use by other MCC plugins.
+
+The core MCC application provides hooks available for all plugins to
+use. Optionally these hooks can define post install actions or apt
+related actions.
+
+Functionally, the frontend and backend processes will both import
+the python plugin and initialize the class for each process.  The
+frontend also calls the GTK functions, whereas the backend only calls
+upon two backend functions.
+
+All plugins are stored in /usr/share/mythbuntu/plugins/{python,ui}.
+Each plugin requires a python source file and a GtkBuilder UI file.
+The details for how these need to be implemented are defined below.
+
+---                ---
+-- Writing a plugin --
+---                ---
+An example plugin is included with the distribution of the core app.
+While explaining how to write a plugin, we will be referring to this
+plugin.
+
+Familiarize yourself with the plugin by running this command:
+ # mythbuntu-control-centre --plugin-root-path=/usr/share/mythbuntu/examples/plugins
+
+This launches the control centre with only plugins found in that
+plugin-root-path.  This is helpful for development so that you know that
+your plugin is not causing problems early on.
+
+The UI will display and you can see that this basic plugin will show the
+following elements:
+ - Installing & Removing a package
+ - Processing a scripted activity as root
+ - Processing a scripted activity as a user
+ - Using a GTK callback to change elements of the UI
+
+After you are familiar with how this plugin works, you can copy it into
+a home directory to start working on your own plugin with it as a basis.
+Make sure that you call it with the full path as an argument.
+
+It's best to develop the frontend of a plugin before the backend.  Start
+out using the Glade Development tool, glade-3.
+
+Opening up glade-3, a few items should be apparent.
+ - The plugin's file name needs to match the top most non window widget
+   of the plugin.  This is what is used to key off what file the plugin
+   loads for the GUI.
+ - The goal is to use the minimum amount of space.  Try not to add too
+   much text as the control centre's minimum size is determined by the
+   max size of a plugin.
+ - Use alignment boxes to keep widgets from the edges.  They look much
+   better this way.
+
+There are tons of advanced features you can add to your ui file, but
+those are out of the scope of this guide.  Look around the internet for
+such guides.
+
+After finishing off the GUI, be sure to take note of any widgets that
+you will need to be keying off in the python file.
+
+Open up the python file in your favorite editor.  We'll discuss the
+elements that are required for the frontend of the plugin first.
+
+--Frontend--
+
+A frontend plugin will always inherit from the class MCCPlugin.  By doing
+so, a variety of methods will be available for the plugin.  You'll need
+to override these methods at a minimum to ensure proper functionality:
+ - __init__
+ - captureState
+ - applyStateToGUI
+ - compareState
+
+In __init__ you need to define a dictionary with the items 'name', 'icon'
+and 'ui'.  After building this dictionary, you need to call the parent
+MCCPlugin __init__ with that dictionary.
+ - 'name' is the name of the plugin on the right side of the MCC UI
+ - 'icon' is the icon that will show up on the right side of the UI
+ - 'ui' is the name of the GtkBuilder file to be loaded (sans .ui)
+
+captureState captures the state of all elements on the system.  It is
+intentionally unpaired with applyStateToGUI and compareState because
+MCC may call these at any time.  It's best to store any information
+determined about the installed system in a dictionary for later use.
+ - query_installed can be used for querying packaged applications
+ - you can import any python packages and use them as well
+
+applyStateToGUI will override any currently set GUI elements with things
+that were determined in captureState.
+
+compareState will compare that dictionary with the currently set GUI
+elements to determine what's changed.
+ - If it is determined that the page needs more activity before
+   being "done", self._incomplete can be set to True.
+ - It's important to call MCCPlugin.clearParentState(self) in this
+   function so that the frontend is in a standard state.
+
+The following functions can be used to record what the backend needs:
+ - _markInstall: marks a package to be installed
+ - _markRemove: marks a package to be removed
+ - _markReconfigureUser: marks a scripted change to be done as a user
+ - _markReconfigureRoot: marks a scripted change to be done by root
+ - _markUpdatePackageList : requests a package list update after completion
+ - _markUnauthenticatedPackages : requests that an unauthenticated package be installed
+
+Callbacks can also be used, but generally the model is that changes
+shouldn't occur until after the frontend calls apply.
+
+--Backend--
+
+If you are only making package installs or removals, you don't need to
+define any more functionality to the plugin.
+
+If you need to represent changes that aren't part of the package
+(scriptedchanges), then you need to define two more methods:
+ - root_scripted_changes
+ - user_scripted_changes
+Both methods have an argument of a dictionary of items to change
+
+The exact same python source file is loaded into the backend process
+when spawned if necessary, so be cognizant that you shouldn't do any
+GTK initialization in __init__ or the backend will fail.
+
+Generally you want to walk through the dictionary argument for both
+cases through a for loop as more than one item can be sent at a time.
+
+Running 'dpkg-reconfigure PACKAGE' is OK in this section, but be sure
+to set the env to 'noninteractive' and instead make the changes in flat
+text files that can be read by the maintainer scripts of that package.
+
+Try to use subprocess.call rather than os.system so the return status
+can be determined.
+
+If you are running an application that may take a long time in your
+processing functions, you might want to use emit_progress which will
+update the GUI with the latest status.
+
+To assist in debugging, you may consider importing the 'logging' module.
+logging.warning('message') will always show up in the backend log
+logging.debug('message') will show up when the backend is spawned with
+--debug.
+
+--Packaging--
+When your plugin is stable, you can start moving it into the system
+location of /usr/share/mythbuntu/plugins.  This means that the standard
+invokation of mythbuntu-control-centre will initialize your plugin
+along with the others on the system.  This adds a new set of variables,
+particularly if you have any name clashes.  Be sure to test like this
+before issuing your plugin to make sure there are no blatant problems.
+
+
+--Single Plugin Mode--
+Sometimes plugins can be so complex that they make more sense being
+put out on their own, but fit very well into the features that MCC provides.
+
+In these instances, you can run the application in "single plugin mode".
+If the plugin should still be shown in the UI in all instances, then
+install it to the standard location and run the plugin like this:
+
+#mythbuntu-control-centre -S "Log Grabber"
+
+where "Log Grabber" is the name of one of the plugins.
+
+If the plugin should only be shown in single plugin mode, install it elsewhere
+on the system, and just set the plugin-root-path:
+
+#mythbuntu-control-centre --plugin-root-path=/usr/share/mythbuntu/examples/plugins/ -s "Skeletor"
+
+You can place whatever you decide into a .desktop file to install into the menus.

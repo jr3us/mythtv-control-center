@@ -1,0 +1,34 @@
+Source: mythbuntu-control-centre
+Section: x11
+Priority: optional
+Maintainer: Ubuntu MythTV Team <ubuntu-mythtv@lists.ubuntu.com>
+Build-Depends: debhelper, 
+               python3-all, 
+               intltool,
+               python3-distutils-extra
+XS-Vcs-Bzr: http://bazaar.launchpad.net/~mythbuntu-dev/mythbuntu/mythbuntu-control-centre
+XS-Vcs-Browser: http://codebrowse.launchpad.net/~mythbuntu-dev/mythbuntu/mythbuntu-control-centre
+XS-Python-Version: current
+Standards-Version: 3.9.3
+Homepage: http://www.mythbuntu.org
+
+Package: mythbuntu-control-centre
+Architecture: all
+Depends: ${python3:Depends}, 
+         python3-apt,
+         python3-dbus,
+	 python-aptdaemon.gtk3widgets,
+         policykit-1,
+         python3-dbus, 
+         gir1.2-gtk-3.0,
+Recommends: mythbuntu-common
+XB-Python-Version: ${python:Versions}
+Description: Mythbuntu Configuration Application
+ The Mythbuntu control centre is used to modify settings on a Mythbuntu
+ system that are not necessarily MythTV specific.  These settings range
+ from setting up system roles, to configuration of drivers, remotes,
+ and services.
+ .
+ This application can also be used on a standard Ubuntu system to convert
+ it directly to a Mythbuntu box or to add Mythbuntu role(s) in addition to
+ the existing desktop role.

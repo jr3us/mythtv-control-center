@@ -1,0 +1,14 @@
+#! /bin/sh
+
+set -e
+
+#DEBHELPER#
+
+case "$1" in
+        remove|purge|upgrade)
+        if dpkg-divert --list mythbuntu-control-centre | grep diverted >/dev/null; then
+            dpkg-divert --package mythbuntu-control-centre --remove \
+                    --rename --divert /usr/share/mythtv/main_settings.xml.diverted /usr/share/mythtv/main_settings.xml
+        fi
+        ;;
+esac

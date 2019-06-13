@@ -1,0 +1,4 @@
+[D-BUS Service]
+Name=com.mythbuntu.ControlCentre
+Exec=/usr/share/mythbuntu/mcc-backend -l /var/log/mcc.log
+User=root

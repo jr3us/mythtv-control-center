@@ -1,0 +1,11 @@
+[Desktop Entry]
+Encoding=UTF-8
+_Name=Mythbuntu Control Centre
+_Comment=Configure a Mythbuntu Appliance
+Icon=mythbuntu
+Exec=/usr/bin/mythbuntu-control-centre
+Terminal=false
+Type=Application
+Categories=GTK;System;Settings
+X-Ubuntu-Gettext-Domain=mythbuntu-control-centre
+X-KDE-SubstituteUID=true

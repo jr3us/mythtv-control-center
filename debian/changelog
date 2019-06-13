@@ -1,0 +1,611 @@
+mythbuntu-control-centre (0.64.1) trusty; urgency=medium
+
+  * Rewrite the python shebang path to /usr/bin/python3.
+
+ -- Matthias Klose <doko@ubuntu.com>  Thu, 20 Feb 2014 16:18:25 +0100
+
+mythbuntu-control-centre (0.64) trusty; urgency=low
+
+  [ Thomas Mashos ]
+  * Sort plugins alphabetically
+  * Fix running with Python3
+  * One item per line in summarizing
+
+  [ Mario Limonciello ]
+  * debian/control:
+    - Update for python3 stuff.
+    - drop cdbs
+    - update for current lintian.
+  * debian/rules:
+    - drop cdbs stuff
+    - don't make separate upstream and ubuntu versions.
+  * Correct an enum for APT installation.
+
+ -- Mario Limonciello <superm1@ubuntu.com>  Tue, 12 Nov 2013 01:15:52 -0600
+
+mythbuntu-control-centre (0.63-0ubuntu2) oneiric; urgency=low
+
+  * langpack.mk got dropped from cdbs in favour of dh_translations - LP: #833884
+
+ -- Marcin Juszkiewicz <marcin.juszkiewicz@linaro.org>  Wed, 31 Aug 2011 16:54:42 +0000
+
+mythbuntu-control-centre (0.63-0ubuntu1) natty; urgency=low
+
+  * Update commit_packages routine for changes in aptdaemon.
+  * Set the apt daemon dialog to always center.
+
+ -- Mario Limonciello <Mario_Limonciello@Dell.com>  Mon, 07 Feb 2011 23:54:25 -0600
+
+mythbuntu-control-centre (0.62-0ubuntu2) natty; urgency=low
+
+  * debian/control:
+    - Update bzr branches to point to ~mythbuntu-dev.
+  * Rebuild for python2.7 transition.
+
+ -- Mario Limonciello <Mario_Limonciello@Dell.com>  Wed, 02 Feb 2011 18:15:00 -0600
+
+mythbuntu-control-centre (0.62-0ubuntu1) lucid; urgency=low
+
+  * Correct some deprecation warnings from a recent python-apt upload.
+
+ -- Mario Limonciello <Mario_Limonciello@Dell.com>  Sun, 28 Mar 2010 01:21:16 -0500
+
+mythbuntu-control-centre (0.61-0ubuntu1) lucid; urgency=low
+
+  * Widget names are no longer stored in the widget's internal name, but
+    rather in the object data.  Sync this information back to the widget's
+    internal name. (LP: #503710)
+
+ -- Mario Limonciello <superm1@ubuntu.com>  Wed, 06 Jan 2010 03:23:08 -0600
+
+mythbuntu-control-centre (0.60-0ubuntu1) lucid; urgency=low
+
+  * Update for the API changes with python-aptdaemon.
+  * Update for changes with PolicyKit.
+
+ -- Mario Limonciello <superm1@ubuntu.com>  Tue, 05 Jan 2010 01:00:02 -0600
+
+mythbuntu-control-centre (0.59-0ubuntu1) lucid; urgency=low
+
+  * Introduce a "single" plugin mode.  This allows a plugin to be launched
+    without allowing switching to other plugins in the UI.
+
+ -- Mario Limonciello <superm1@ubuntu.com>  Fri, 27 Nov 2009 17:28:59 -0600
+
+mythbuntu-control-centre (0.58-0ubuntu1) lucid; urgency=low
+
+  * Add a new function to all plugins for notification during extended
+    processing.
+  * Update skeletor to show how to update the progress bar from a plugin.
+  * Update policykit to cache between runs.
+
+ -- Mario Limonciello <superm1@ubuntu.com>  Wed, 25 Nov 2009 02:17:53 -0600
+
+mythbuntu-control-centre (0.57-0ubuntu1) karmic; urgency=low
+
+  * When plugins get loaded into the button box, pack them into gtk.HBox's
+    rather than using gtk.Button.set_image.  It appears that gtk-button-images
+    is not set on Gnome installs causing different behaviors on Gnome vs.
+    XFCE otherwise.
+  * Drop diverstion of mythtv menu xml file to add our entry in.
+  * Drop old postinst that is not needed for upgrade scenarios anymore.
+
+ -- Mario Limonciello <superm1@ubuntu.com>  Wed, 14 Oct 2009 01:24:28 -0500
+
+mythbuntu-control-centre (0.56-0ubuntu2) karmic; urgency=low
+
+  * debian/control:
+    - Fix small comma error that didn't throw off pbuilder, but sbuild didn't
+      like.
+
+ -- Mario Limonciello <superm1@ubuntu.com>  Sun, 04 Oct 2009 04:09:21 -0500
+
+mythbuntu-control-centre (0.56-0ubuntu1) karmic; urgency=low
+
+  * debian/dirs:
+    - Install ui rather than glade directory.
+  * ui:
+    - Update default window size from 800x400 to 790x480.
+  * Use aptdaemon for performing package install and removals
+    rather than complex built-in logic.  (Stop reinventing the square!)
+  * Allow plugins to request a package list update so that future
+    invokations will not have errors.
+  * Allow a plugin to request that a single package transaction allow
+    unauthenticated installation.  A large WARNING is presented to the
+    user when this option is enabled by a plugin. (LP: #415969)
+
+ -- Mario Limonciello <superm1@ubuntu.com>  Sun, 04 Oct 2009 04:00:25 -0500
+
+mythbuntu-control-centre (0.55-0ubuntu1) karmic; urgency=low
+
+  * Port to polkit-1.
+  * debian/control:
+    - Depends on policykit-1 instead of policykit
+
+ -- Mario Limonciello <superm1@ubuntu.com>  Sat, 03 Oct 2009 16:24:39 -0500
+
+mythbuntu-control-centre (0.54-0ubuntu1) karmic; urgency=low
+
+  * Set notebook tab focus on click. (LP: #428689)
+  * Don't default one of the tabs to be focused when welcome message
+    is shown. (LP: #428691)
+
+ -- Mario Limonciello <superm1@ubuntu.com>  Mon, 14 Sep 2009 23:06:08 -0500
+
+mythbuntu-control-centre (0.53-0ubuntu1) karmic; urgency=low
+
+  * mythbuntu_control_centre.ui:
+    - Don't let dialog boxes be named the same.  A recent GTK upload
+      appears to be less forgiving of it. (LP: #422240)
+  * debian/control:
+    - Depends on python-dbus
+
+ -- Mario Limonciello <superm1@ubuntu.com>  Mon, 31 Aug 2009 22:36:33 -0500
+
+mythbuntu-control-centre (0.52-0ubuntu1) karmic; urgency=low
+
+  * Convert the project to use gtk.Builder as the primary way of loading
+    plugins.  This introduces a new information dictionary key, "ui"
+    for plugins. (LP: #403542)
+  * Add more debugging code when loading widgets and files and what not
+    as they have more of a tendency to break now.
+  * debian/control:
+    - Remove python-glade2
+    - Add python-gtk2
+
+ -- Mario Limonciello <superm1@ubuntu.com>  Tue, 18 Aug 2009 00:09:51 -0500
+
+mythbuntu-control-centre (0.51-0ubuntu1) karmic; urgency=low
+
+  * applications/mythbuntu-control-centre.desktop.in:
+    - Set the icon to the proper icon so we can see it in XFCE menus.
+
+ -- Mario Limonciello <superm1@ubuntu.com>  Wed, 10 Jun 2009 12:07:20 -0500
+
+mythbuntu-control-centre (0.50-0ubuntu1) karmic; urgency=low
+
+  * Complete rewrite of mcc.  We're now plugin based
+    where plugins are dynamically detected upon loading.
+  * Setup translation system based on python-distutils-extra instead.
+  * debian/control:
+    - Clean up depends which should now be on mythbuntu-common.
+  * debian/links:
+    - Drop, no longer necessary since all plugins are in common
+
+ -- Mario Limonciello <superm1@ubuntu.com>  Tue, 09 Jun 2009 00:34:54 -0500
+
+mythbuntu-control-centre (0.37-0ubuntu1) jaunty; urgency=low
+
+  [ Nick Fox ]
+  * Fix optimize_mythdb cron job (LP: #290781)
+  * Allow experimental tweaks that are not role specific (LP: #290439)
+
+ -- Mario Limonciello <superm1@ubuntu.com>  Fri, 17 Apr 2009 01:48:38 -0500
+
+mythbuntu-control-centre (0.36-0ubuntu1) jaunty; urgency=low
+
+  [ Mario Limonciello ]
+  * Remove any checks for copying a dmrc around.  We now key off the gdm
+    conf by default. (LP: #353072)
+  * Remove mythbrowser from the glade file. (LP: #353736)
+  * Catch a ValueError caused by using NIS.  We can't support automatic
+    login for this scenario. (LP: #313876)
+
+  [ Nick Fox ]
+  * Move VNC Password to ~/.vnc (LP: #336274)
+
+ -- Nick Fox <nfox@foxmediasystems.com>  Fri, 10 Apr 2009 01:18:04 -0500
+
+mythbuntu-control-centre (0.35-0ubuntu1) jaunty; urgency=low
+
+  * Update translations from launchpad. (LP: #348178)
+
+ -- Mario Limonciello <superm1@ubuntu.com>  Fri, 03 Apr 2009 07:01:32 -0500
+
+mythbuntu-control-centre (0.34-0ubuntu1) jaunty; urgency=low
+
+  * Fix medibuntu to support jaunty in more places. (LP: #276580)
+
+ -- Mario Limonciello <superm1@ubuntu.com>  Sun, 29 Mar 2009 12:42:39 -0500
+
+mythbuntu-control-centre (0.33-0ubuntu1) jaunty; urgency=low
+
+  * Fix medibuntu to support jaunty.
+
+ -- Mario Limonciello <superm1@ubuntu.com>  Sat, 28 Feb 2009 10:45:15 -0600
+
+mythbuntu-control-centre (0.32-0ubuntu1) intrepid; urgency=low
+
+  * Fix Medibuntu support: we want intrepid, not hardy (LP: #276580)
+
+ -- Michael Haas <laga@moar>  Wed, 15 Oct 2008 21:49:03 +0200
+
+mythbuntu-control-centre (0.31-0ubuntu1) intrepid; urgency=low
+
+  * Add "quiet splash" to boot options for diskless thumb drive (LP: #267368)
+
+ -- Michael Haas <laga@laga.ath.cx>  Wed, 15 Oct 2008 17:58:30 +0200
+
+mythbuntu-control-centre (0.30-0ubuntu2) intrepid; urgency=low
+
+  * Add debian/links to overwrite stuff from -common w/ symlinks
+    instead of real files.
+
+ -- Mario Limonciello <superm1@ubuntu.com>  Tue, 16 Sep 2008 01:03:30 -0500
+
+mythbuntu-control-centre (0.30-0ubuntu1) intrepid; urgency=low
+
+  [ Mario Limonciello ]
+  * Don't bail out on empty lines in /etc/passwd. (LP: #231065)
+
+  [ Nick Ellery ]
+  * MythbuntuControlCentre/tab_system_roles.glade:
+     - Fix a spelling mistake (Deskop -> Desktop) (LP: #257754).
+  * MythbuntuControlCentre/tab_advanced.glade:
+     - Fix a spelling mistake (Mangement -> Management) (LP: #257864).
+
+  [ Siegfried-Angel Gevatter Pujals ]
+  * mythbuntu-control-centre.1:
+    - Fix an incorrect sentence ("mythbuntu-control-centre is by Mario").
+    - Metion that it is a graphical utility.
+
+ -- Mario Limonciello <superm1@ubuntu.com>  Mon, 15 Sep 2008 00:58:39 -0500
+
+mythbuntu-control-centre (0.29-0ubuntu1) intrepid; urgency=low
+
+  [ Nick Fox ]
+  * Fix for special characters in VNC password (LP #241402)
+  * Add support for Mythbuntu Apple Trailers.
+
+  [ Mario Limonciello ]
+  * debian/control:
+  - Bump standards version.
+
+ -- Mario Limonciello <superm1@ubuntu.com>  Sun, 06 Jul 2008 01:57:08 -0500
+
+mythbuntu-control-centre (0.28-0ubuntu1~hardy2) hardy-proposed; urgency=low
+
+  [ Michael Haas ]
+  * diskless tab: fix typo which prevented the "Allow unsigned packages" checkbox from
+    applying successfully.
+  * diskless tab: Pop up an error message if ltsp-build-client fails.
+
+ -- Michael Haas <laga@laga.ath.cx>  Thu, 01 May 2008 00:41:05 +0200
+
+mythbuntu-control-centre (0.28-0ubuntu1~hardy1) hardy-proposed; urgency=low
+
+  * add MCC_DEBUG environment variable. set to "true" to get additional
+    debugging output. only applies for -diskless right now
+  * fix the progress bar for -diskless (LP #221921)
+
+ -- Michael Haas <laga@laga.ath.cx>  Fri, 25 Apr 2008 16:18:02 +0200
+
+mythbuntu-control-centre (0.27-0ubuntu1) hardy; urgency=low
+
+  * Correct error in checking diskless dictionaries for dhcp3
+    server. (LP: #215174)
+  * Bindmount dev, sys, and proc when in the chroot.  This
+    allows us to do more powerful things like control
+    virtual ttys and check running processes. (LP: #214074)
+
+ -- Mario Limonciello <superm1@ubuntu.com>  Thu, 10 Apr 2008 23:01:44 -0500
+
+mythbuntu-control-centre (0.26-0ubuntu1) hardy; urgency=low
+
+  [ Michael Haas ]
+  * Do not reconfigure mythbuntu-diskless-server every time changes are
+    applied
+  * When configuring NFS exports for media, these are no longer exported to
+    the world. Instead, the network is guessed by looking at the address of
+    the master backend and access is restricted to that network.
+  * add button to install dhcp server for -diskless. /etc/ltsp/dhcp.conf is
+    adjusted automatically if the master backend address can be looked up.
+  * When installing mythbuntu-diskless-server, the overlay share is subject to
+    the same access restrictions now as the NFS exports for media (see above)
+
+  [ Nick Fox ]
+  * Update logo
+
+ -- Mario Limonciello <superm1@ubuntu.com>  Wed, 09 Apr 2008 22:33:32 -0500
+
+mythbuntu-control-centre (0.25-0ubuntu1) hardy; urgency=low
+
+  [ Mario Limonciello ]
+  * Move diskless build process to changer.py.  We have a
+    spiffilistic interface to go now.
+  * Don't trigger role changing on *-desktop (LP: #200515)
+
+  [ Michael Haas ]
+  * More diskless improvements.
+
+  [ Nick Fox ]
+  * Reset RTC and ivtv tweaks to proper values.
+
+ -- Mario Limonciello <superm1@ubuntu.com>  Mon, 10 Mar 2008 22:57:59 -0500
+
+mythbuntu-control-centre (0.24-0ubuntu1) hardy; urgency=low
+
+  [ Michael Haas ]
+  * Add buttons to build and remove images for diskless clients
+  * Add maintenance options for diskless clients, including the ability to
+    write a bootloader to a USB pen drive
+
+  [ Mario Limonciello ]
+  * Make diskless UI only show up if diskless is installed.
+  * Clean up diskless UI to make it less daunting.
+
+  [ Nick Fox ]
+  * Add System role for Diskless Server
+  * Clean up Diskless Server UI
+  * Clear Server ARCH Box before polulating to prevent dupliactes
+
+  [ Frank Bob ]
+  * Add MCC to KDE menu items. (LP: #199293)
+
+  [ Nick Fox ]
+  * Added tooltips to advanced tab items (LP: #200317)
+
+ -- Mario Limonciello <superm1@ubuntu.com>  Mon, 10 Mar 2008 11:09:05 -0500
+
+mythbuntu-control-centre (0.23-0ubuntu1) hardy; urgency=low
+
+  [ Mario Limonciello ]
+  * core.py:
+    - Make sure to actually check ubuntu/xubuntu/kubuntu
+      when detecting things.
+  * debian/control:
+    - Update homepage url.
+  * Add stub for upcoming diskless (for when its stable)
+
+  [ Nick Fox ]
+  * Added feature to Tweak VM MEM for IVTV Drivers (LP: #124514)
+  * Added RTC Video Tweak Feautre (LP: #139949)
+
+ -- Mario Limonciello <superm1@ubuntu.com>  Sun, 02 Mar 2008 19:18:11 -0600
+
+mythbuntu-control-centre (0.22-0ubuntu1) hardy; urgency=low
+
+  * core.py, changer.py:
+  * Install x11vnc rather than broken vnc4server.
+  * Drop mythappearance from the GUI.
+  * changer.py:
+    - Always disable vnc from xorg.conf so as to try to help migrate
+      folks away from vnc troubles.
+    - Correct debconftalk calls (LP: 195307)
+  * main_settings.xml:
+    - Merge from mythtv release-0-21-fixes. (LP: #195429)
+
+ -- Mario Limonciello <superm1@ubuntu.com>  Sun, 24 Feb 2008 22:30:54 -0600
+
+mythbuntu-control-centre (0.21-0ubuntu1) hardy; urgency=low
+
+  * Make sure that all images are jockey images, not
+    restricted-manager images.
+  * Allow nvidia-settings to be installed if its not present
+    due to new archive changes.
+  * debian/control:
+    - Bump standards verison
+    - Add homepage field
+
+ -- Mario Limonciello <superm1@ubuntu.com>  Sun, 17 Feb 2008 22:43:00 -0600
+
+mythbuntu-control-centre (0.20-0ubuntu1) hardy; urgency=low
+
+  * debian/control:
+    - Depend on jockey-gtk instead of restricted-manager
+  * core.py:
+    - Call jockey-gtk binary instead.
+
+ -- Mario Limonciello <superm1@ubuntu.com>  Fri, 01 Feb 2008 23:24:33 -0600
+
+mythbuntu-control-centre (0.19-0ubuntu1) hardy; urgency=low
+
+  * Adjust plugins to reflect new plugins in 0.21 since 0.21 is now
+    in apt.
+
+ -- Mario Limonciello <superm1@ubuntu.com>  Wed, 30 Jan 2008 19:48:47 -0600
+
+mythbuntu-control-centre (0.18-0ubuntu1) hardy; urgency=low
+
+  * Don't activate lircrc generation all the time.
+  * Revert su-to-root changes.  Many environment variables are not saved
+    when using it due to gksu rather than gksudo.
+
+ -- Mario Limonciello <superm1@ubuntu.com>  Sun, 27 Jan 2008 11:29:12 -0600
+
+mythbuntu-control-centre (0.17-0ubuntu1) hardy; urgency=low
+
+  * Launch mythtv-setup as the user mcc is started as, not root.
+  * Use su-to-root rather than gksu.
+  * debian/control:
+    - Add menu to dependencies to provide su-to-root.
+
+ -- Mario Limonciello <superm1@ubuntu.com>  Thu, 24 Jan 2008 19:51:12 -0600
+
+mythbuntu-control-centre (0.16-0ubuntu1) hardy; urgency=low
+
+  * Add support for theme installation.
+  * Check for hardy medibuntu, not gutsy.
+  * debian/control:
+    - Build depend on at least mythbuntu-common 0.6 so that we have theme
+      support during the package build.
+
+ -- Mario Limonciello <superm1@ubuntu.com>  Mon, 21 Jan 2008 14:09:09 -0600
+
+mythbuntu-control-centre (0.15-0ubuntu1) hardy; urgency=low
+
+  * Correct a few minor typos related to debconftalk'ing.
+
+ -- Mario Limonciello <superm1@ubuntu.com>  Sat, 12 Jan 2008 13:29:20 -0600
+
+mythbuntu-control-centre (0.14-0ubuntu1) hardy; urgency=low
+
+  * Drop infrared glade file in favor of using the one in mythbuntu-common.
+  * Add mythbuntu-common to build-depends to make glade file translatable
+
+ -- Mario Limonciello <superm1@ubuntu.com>  Sat, 12 Jan 2008 09:55:50 -0600
+
+mythbuntu-control-centre (0.13-0ubuntu1) hardy; urgency=low
+
+  * debian/control:
+    - Drop dependency of mythbuntu-lirc-generator.
+    - Add dependency of mythbuntu-common.
+  * Modify code to use mythbuntu-common instead of native functions.
+  * Remove scripts/create_vnc_passwd since it is now part of mythbuntu-common.
+  * Remove config/lirc.hwdb that was shipped so that it can be shipped in
+    lirc instead.
+  * debian/preinst:
+    - Drop diversion on config/lirc.hwdb.
+  * debian/postrm:
+    - Drop diversion on config/lirc.hwdb.
+  * Add debian/postinst:
+    - Revert config/lirc.hwdb diversions.
+  * Move man page to main package rather than debian changes.
+  * Reconfigure mysql service to properly deactivate rather than remove.
+  * Add IR transmitter support to remote page.
+  * Add ability to select device on remote page.
+  * Drop debconftalk.py since its now in mythbuntu-common.
+  * Drop vnc.py since its now in mythbuntu-common.
+
+ -- Mario Limonciello <superm1@ubuntu.com>  Wed, 26 Dec 2007 21:09:44 -0600
+
+mythbuntu-control-centre (0.12-0ubuntu1) hardy; urgency=low
+
+  * changer.py:
+    - Enable error dialog for wanting cdrom. (LP: #156471)
+    - Enable warning about restarting X server when changing
+      VNC. (LP: #156495)
+  * core.py:
+    - Fix typo preventing package configure. (LP: #173450)
+    - Only allow w32codecs on amd64.  (LP: #157091)
+    - Don't allow removal of mysql-server package. (LP: #156089)
+
+ -- Mario Limonciello <superm1@ubuntu.com>  Sun, 09 Dec 2007 03:41:17 -0600
+
+mythbuntu-control-centre (0.11-0ubuntu1) hardy; urgency=low
+
+  * Release into hardy.
+  * Include fix for KeyErrors (LP: #154985)
+
+ -- Mario Limonciello <superm1@ubuntu.com>  Fri, 02 Nov 2007 12:21:22 -0400
+
+mythbuntu-control-centre (0.10-0ubuntu1.1) gutsy-proposed; urgency=low
+
+  * Ignore KeyErrors when checking if a package is
+    installed. (LP: #154985)
+
+ -- Mario Limonciello <superm1@ubuntu.com>  Tue, 16 Oct 2007 22:36:02 -0500
+
+mythbuntu-control-centre (0.10-0ubuntu1) gutsy; urgency=low
+
+  * Work around Hauppauge Nova T 500 bug found past main's
+    freeze within the LIRC package by providing lirc.hwdb
+    and diverting. (LP: #152353)
+  * For any remotes that use "none" for modules, don't set
+    the results to "none", but rather "".
+
+ -- Mario Limonciello <superm1@ubuntu.com>  Sat, 13 Oct 2007 10:18:01 -0500
+
+mythbuntu-control-centre (0.9-0ubuntu1) gutsy; urgency=low
+
+  [ Zach Banks ]
+  * Detect amd64 and install w64codecs instead of w32codecs.
+
+  [ Mario Limonciello ]
+  * Catch broken symlinks when making autologin. (LP: #151258)
+  * Properly toggle automatic login depending on desktop's
+    installed, since this was broke an upload or two ago.
+  * Don't update autologin user to [Disabled]
+
+ -- Mario Limonciello <superm1@ubuntu.com>  Wed, 10 Oct 2007 17:24:27 -0500
+
+mythbuntu-control-centre (0.8-0ubuntu1) gutsy; urgency=low
+
+  [ Mario Limonciello ]
+  * Recursively make directories when necessary.
+  * Adjust directory permissions so users can still have custom
+    .config/autostart directories.
+  * Fix inconsequential typo during lircrc generation.
+  * Clarify text to explain mythbuntu-lirc-generator's results.
+  * Fix VNC Password generation.
+
+  [ Michael Haas ]
+  * Include MySQL optimization support.
+  * Import translations from rosetta
+  * Some fields must not be translatable (LP: #148312=
+  * Add ability to add a daily cron job for optimize_mythdb.pl (from
+    mythtv-backend).
+  * Add option to add a daily cron job for xfs_fsr.
+
+  [ Zach Banks ]
+  * Complete previously partially implemented medibuntu support.
+  * Allow multiple desktop types to be selected. (LP: #139585)
+  * Add button to call optimize_mythdb.pl manually.
+  * Don't launch terminals as root (LP: #148318)
+
+ -- Mario Limonciello <superm1@ubuntu.com>  Mon, 01 Oct 2007 16:03:52 -0500
+
+mythbuntu-control-centre (0.7-0ubuntu1) gutsy; urgency=low
+
+  * Include a logo with a transparent background.
+  * Pad mythweb authentication items by 25 pixels.
+  * Make ~/.config/autostart directory if it doesn't exist
+    when enabling autostart.
+
+ -- Mario Limonciello <superm1@ubuntu.com>  Mon, 01 Oct 2007 09:29:44 -0500
+
+mythbuntu-control-centre (0.6-0ubuntu1) gutsy; urgency=low
+
+  [ Michael Haas ]
+  * Add support for mythweb htaccess.
+  * Update german translation.
+  * Introduce debconf support.
+
+  [ Mario Limonciello ]
+  * Catch errors for broken apt cache.
+  * Make sure that when generating new lircrc configs, the old config
+    is *moved*, not copied.  This prevents double listing configs.
+  * Remove support for using ubuntu-mythtv-frontend.
+  * Don't correct uid/gid unless they are numbers. (LP: #139591)
+  * Don't allow changing artwork settings unless at least one
+    {,k,x}buntu-desktop package is installed.
+  * Don't allow changing artwork settings if automatic login
+    is enabled.
+
+ -- Mario Limonciello <superm1@ubuntu.com>  Tue, 25 Sep 2007 09:59:06 -0500
+
+mythbuntu-control-centre (0.5-0ubuntu1) gutsy; urgency=low
+
+  * Update for one more feature just added to lirc generation.
+
+ -- Mario Limonciello <superm1@ubuntu.com>  Fri, 14 Sep 2007 12:11:36 -0500
+
+mythbuntu-control-centre (0.4-0ubuntu1) gutsy; urgency=low
+
+  * Update number of parameters necessary for lircrc generation.
+
+ -- Mario Limonciello <superm1@ubuntu.com>  Fri, 14 Sep 2007 10:51:22 -0500
+
+mythbuntu-control-centre (0.3-0ubuntu1) gutsy; urgency=low
+
+  * Introduce support to reload packages from software-properties-gtk.
+  * Don't hardcode terminals, but rather use the alternatives system.
+  * Fix nvidia-settings and amdcccle launching. (LP: #138722).
+  * Don't activate artwork when disabling roles.
+  * Check for mplayer-nogui and mplayer.
+
+ -- Mario Limonciello <superm1@ubuntu.com>  Tue, 11 Sep 2007 01:35:11 -0500
+
+mythbuntu-control-centre (0.2-0ubuntu1) gutsy; urgency=low
+
+  * Add advanced tab for launching more applications.
+  * Add Quit button to front of gui.
+  * Don't check for userid > 999 & < 10000 (LP: #137452)
+
+ -- Mario Limonciello <superm1@ubuntu.com>  Fri, 07 Sep 2007 16:37:25 -0500
+
+mythbuntu-control-centre (0.1-0ubuntu1) gutsy; urgency=low
+
+  * Initial Release.
+
+ -- Mario Limonciello <superm1@ubuntu.com>  Thu, 26 Jul 2007 18:57:26 -0700

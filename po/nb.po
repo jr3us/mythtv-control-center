@@ -1,0 +1,872 @@
+# Norwegian Bokmal translation for mythbuntu-control-centre
+# Copyright (c) 2007 Rosetta Contributors and Canonical Ltd 2007
+# This file is distributed under the same license as the mythbuntu-control-centre package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2007.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: mythbuntu-control-centre\n"
+"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2008-07-26 21:27+0200\n"
+"PO-Revision-Date: 2008-03-26 19:52+0000\n"
+"Last-Translator: Morten Mytting Wang <morten@dc-system.net>\n"
+"Language-Team: Norwegian Bokmal <nb@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2009-04-03 11:56+0000\n"
+"X-Generator: Launchpad (build Unknown)\n"
+
+#: ../MythbuntuControlCentre/mythbuntu_control_centre.glade.h:1
+msgid "<big><b>Apply Changes</b></big>"
+msgstr "<big><b>Bruk forandringer</b></big>"
+
+#: ../MythbuntuControlCentre/mythbuntu_control_centre.glade.h:2
+msgid ""
+"<big><b>Welcome to the Mythbuntu Control Centre (MCC).</b>  \n"
+"To Begin, Select a group of tasks to modify from the left.</big>"
+msgstr ""
+
+#: ../MythbuntuControlCentre/mythbuntu_control_centre.glade.h:4
+msgid "Advanced Mangement"
+msgstr "Avansert behandling"
+
+#: ../MythbuntuControlCentre/mythbuntu_control_centre.glade.h:5
+msgid "Applications & Plugins"
+msgstr "Programmer og utvidelser"
+
+#: ../MythbuntuControlCentre/mythbuntu_control_centre.glade.h:6
+msgid "Apply Settings?"
+msgstr "Bruk innstillinger?"
+
+#: ../MythbuntuControlCentre/mythbuntu_control_centre.glade.h:7
+msgid "Artwork & Login Behavior"
+msgstr "Skisse og innloggingsoppførsel"
+
+#: ../MythbuntuControlCentre/mythbuntu_control_centre.glade.h:8
+msgid ""
+"Below is a summary of all of the currently marked changes.  If you press "
+"Apply, all of these changes will be applied."
+msgstr ""
+"Under er et sammendrag av alle nåværende markerte endringer. Hvis du trykker "
+"Bruk vil alle disse endringene bli brukt."
+
+#: ../MythbuntuControlCentre/mythbuntu_control_centre.glade.h:9
+#: ../MythbuntuControlCentre/tab_system_roles.glade.h:11
+msgid "Diskless Server"
+msgstr ""
+
+#: ../MythbuntuControlCentre/mythbuntu_control_centre.glade.h:10
+msgid "Infrared Devices"
+msgstr ""
+
+#: ../MythbuntuControlCentre/mythbuntu_control_centre.glade.h:11
+msgid "MythTV Configuration"
+msgstr "MythTV Konfigurasjon"
+
+#: ../MythbuntuControlCentre/mythbuntu_control_centre.glade.h:12
+msgid "MythTV Themes"
+msgstr ""
+
+#: ../MythbuntuControlCentre/mythbuntu_control_centre.glade.h:13
+#: ../MythbuntuControlCentre/progress_dialogs.glade.h:4
+msgid "Mythbuntu Control Centre"
+msgstr "Mythbuntu Kontroll Senter"
+
+#: ../MythbuntuControlCentre/mythbuntu_control_centre.glade.h:14
+msgid "Proprietary Codecs"
+msgstr "Proprietære kodeker"
+
+#: ../MythbuntuControlCentre/mythbuntu_control_centre.glade.h:15
+msgid "Proprietary Drivers"
+msgstr "Proprietære drivere"
+
+#: ../MythbuntuControlCentre/mythbuntu_control_centre.glade.h:16
+msgid "Remote Network Shares"
+msgstr "Eksterne delte ressurser"
+
+#: ../MythbuntuControlCentre/mythbuntu_control_centre.glade.h:17
+msgid "System Roles"
+msgstr "System roller"
+
+#: ../MythbuntuControlCentre/mythbuntu_control_centre.glade.h:18
+msgid "System Services"
+msgstr "System tjenester"
+
+#: ../MythbuntuControlCentre/mythbuntu_control_centre.glade.h:19
+msgid ""
+"The changes you have made to this page must be applied before you can "
+"continue within the control centre.  Would you like to apply them right now "
+"or revert back to the original settings?"
+msgstr ""
+"Endringene du har gjort på denne siden må bli brukt før du kan fortsette i "
+"kontroll senteret. Vil du bruke dem nå eller vende tilbake til originale "
+"innstillinger?"
+
+#: ../MythbuntuControlCentre/mythbuntu_control_centre.glade.h:20
+msgid "_Revert GUI"
+msgstr ""
+
+#: ../MythbuntuControlCentre/tab_applications_plugins.glade.h:1
+msgid "<b>Media Playback Applications</b>"
+msgstr "<b>Media avspilling programmer</b>"
+
+#: ../MythbuntuControlCentre/tab_applications_plugins.glade.h:2
+msgid "<b>MythTV Plugins</b>"
+msgstr "<b>MythTV Utvildelser</b>"
+
+#: ../MythbuntuControlCentre/tab_applications_plugins.glade.h:3
+msgid "<big><b>Applications and Plugins</b></big>"
+msgstr "<big><b>Programmer og utvidelser</b></big>"
+
+#: ../MythbuntuControlCentre/tab_applications_plugins.glade.h:4
+msgid ""
+"Applications and plugins can be used to futher extend functionality of a "
+"Mythbuntu box.  These are some of the most commonly used applications.  "
+"Additional applications can be installed via standard apt methods."
+msgstr ""
+"Programmer og utvidelser kan bli brukt for å utvide funksjonaliteten på "
+"Mythbuntu boksen. Disse er noen av de mest brukte programmene.\r\n"
+"Andre programmer kan bli installert via standard apt metoder."
+
+#: ../MythbuntuControlCentre/tab_applications_plugins.glade.h:5
+msgid "Enable/Disable All Plugins"
+msgstr "Aktivere/deaktivere alle utvidelser"
+
+#: ../MythbuntuControlCentre/tab_applications_plugins.glade.h:6
+msgid "MB Apple Trailers"
+msgstr ""
+
+#: ../MythbuntuControlCentre/tab_applications_plugins.glade.h:7
+msgid "MPlayer"
+msgstr "MPlayer"
+
+#: ../MythbuntuControlCentre/tab_applications_plugins.glade.h:8
+msgid "MythArchive"
+msgstr "MythArkiv"
+
+#: ../MythbuntuControlCentre/tab_applications_plugins.glade.h:9
+msgid "MythBrowser"
+msgstr "MythUtforsker"
+
+#: ../MythbuntuControlCentre/tab_applications_plugins.glade.h:10
+msgid "MythControls"
+msgstr "MythKontroller"
+
+#: ../MythbuntuControlCentre/tab_applications_plugins.glade.h:11
+msgid "MythFlix"
+msgstr "MythFlix"
+
+#: ../MythbuntuControlCentre/tab_applications_plugins.glade.h:12
+msgid "MythGallery"
+msgstr "MythGalleri"
+
+#: ../MythbuntuControlCentre/tab_applications_plugins.glade.h:13
+msgid "MythGame"
+msgstr "MythSpill"
+
+#: ../MythbuntuControlCentre/tab_applications_plugins.glade.h:14
+msgid "MythMovies"
+msgstr ""
+
+#: ../MythbuntuControlCentre/tab_applications_plugins.glade.h:15
+msgid "MythMusic"
+msgstr "MythMusikk"
+
+#: ../MythbuntuControlCentre/tab_applications_plugins.glade.h:16
+msgid "MythNews"
+msgstr "MythNyheter"
+
+#: ../MythbuntuControlCentre/tab_applications_plugins.glade.h:17
+msgid "MythPhone"
+msgstr "MythTelefon"
+
+#: ../MythbuntuControlCentre/tab_applications_plugins.glade.h:18
+msgid "MythStream"
+msgstr "MythStream"
+
+#: ../MythbuntuControlCentre/tab_applications_plugins.glade.h:19
+msgid "MythVideo"
+msgstr "MythVideo"
+
+#: ../MythbuntuControlCentre/tab_applications_plugins.glade.h:20
+msgid "MythWeather"
+msgstr "MythVær"
+
+#: ../MythbuntuControlCentre/tab_applications_plugins.glade.h:21
+msgid "MythWeb"
+msgstr "MythWeb"
+
+#: ../MythbuntuControlCentre/tab_applications_plugins.glade.h:22
+msgid "Password"
+msgstr "Passord"
+
+#: ../MythbuntuControlCentre/tab_applications_plugins.glade.h:23
+msgid "Set password for MythWeb"
+msgstr "Sett passord på MythWeb"
+
+#: ../MythbuntuControlCentre/tab_applications_plugins.glade.h:24
+msgid "Username"
+msgstr "Brukernavn"
+
+#: ../MythbuntuControlCentre/tab_applications_plugins.glade.h:25
+msgid "VLC Media Player"
+msgstr "VLC Media Avspiller"
+
+#: ../MythbuntuControlCentre/tab_applications_plugins.glade.h:26
+msgid "Xine"
+msgstr "Xine"
+
+#: ../MythbuntuControlCentre/tab_artwork_behavior.glade.h:1
+msgid ""
+"<b>-----WARNING-----</b>\n"
+" It is highly recommended that you do not choose the user 'mythtv' for "
+"Automatic login.  This will make system administration much more difficult."
+msgstr ""
+"<b>-----WARNING-----</b>\n"
+"Det er høyst anbefalt at du ikke bruker 'mythtv' brukeren for automatisk "
+"innlogging. Dette vil gjøre system administrasjon mye vanskeligere."
+
+#: ../MythbuntuControlCentre/tab_artwork_behavior.glade.h:3
+msgid "<b>Artwork</b>"
+msgstr "<b>Kunst</b>"
+
+#: ../MythbuntuControlCentre/tab_artwork_behavior.glade.h:4
+msgid "<b>Automatic Login</b>"
+msgstr "<b>Automatisk innlogging</b>"
+
+#: ../MythbuntuControlCentre/tab_artwork_behavior.glade.h:5
+msgid ""
+"<b>NOTE: </b> This is disabled if you don't have ubuntu-desktop, xubuntu-"
+"desktop, or kubuntu-desktop installed.  It also will be disabled if you are "
+"using automatic login."
+msgstr ""
+
+#: ../MythbuntuControlCentre/tab_artwork_behavior.glade.h:6
+msgid "<big><b>Artwork and Login Behavior</b></big>"
+msgstr ""
+
+#: ../MythbuntuControlCentre/tab_artwork_behavior.glade.h:7
+msgid ""
+"All Mythbuntu artwork is pre-installed when switching from a non Mythbuntu "
+"role to a Mythbuntu role.  It can be safely and automatically removed here."
+msgstr ""
+
+#: ../MythbuntuControlCentre/tab_artwork_behavior.glade.h:8
+msgid "Automatically start MythTV standalone session upon boot"
+msgstr "Automatisk starte MythTV sesjonen under oppstart"
+
+#: ../MythbuntuControlCentre/tab_artwork_behavior.glade.h:9
+msgid "Choose User Name to automatically login to."
+msgstr "Velg bruker navn som automatisk skal logge inn."
+
+#: ../MythbuntuControlCentre/tab_artwork_behavior.glade.h:10
+msgid ""
+"Depending on the primary purpose for this box, you may want to override the "
+"default Mythbuntu artwork and automatic login behavior."
+msgstr ""
+"Avhengig av primære hensikter for denne boksen, vil du kanskje ville "
+"overskrive originale Mythbuntu artwork og automatisk innloggings oppførsel."
+
+#: ../MythbuntuControlCentre/tab_artwork_behavior.glade.h:11
+msgid "Mythbuntu Artwork & Settings"
+msgstr ""
+
+#: ../MythbuntuControlCentre/tab_mythtv_configuration.glade.h:1
+msgid "<b>MySQL Server Information</b>"
+msgstr "<b>MySQL Server Informasjon</b>"
+
+#: ../MythbuntuControlCentre/tab_mythtv_configuration.glade.h:2
+msgid "<b>MythTV Setup</b>"
+msgstr "<b>MythTV oppsett</b>"
+
+#: ../MythbuntuControlCentre/tab_mythtv_configuration.glade.h:3
+msgid "<big><b>MythTV Configuration</b></big>"
+msgstr "<big><b>MythTV Konfigurasjon</b></big>"
+
+#: ../MythbuntuControlCentre/tab_mythtv_configuration.glade.h:4
+msgid ""
+"For machines containing a backend role, MythTV Setup can be launched and "
+"configured here after installing the role.  Machines containing a frontend "
+"role can configure the information necessary to contact the primary backend "
+"here as well."
+msgstr ""
+
+#: ../MythbuntuControlCentre/tab_mythtv_configuration.glade.h:5
+msgid "Launch MythTV Setup"
+msgstr "Kjør MythTV oppsett"
+
+#: ../MythbuntuControlCentre/tab_mythtv_configuration.glade.h:6
+msgid "MySQL MythTV Database:"
+msgstr "MySQL MythTV Database:"
+
+#: ../MythbuntuControlCentre/tab_mythtv_configuration.glade.h:7
+msgid "MySQL MythTV Password:"
+msgstr "MySQL MythTV Passord:"
+
+#: ../MythbuntuControlCentre/tab_mythtv_configuration.glade.h:8
+msgid "MySQL MythTV User:"
+msgstr "MySQL MythTV Bruker:"
+
+#: ../MythbuntuControlCentre/tab_mythtv_configuration.glade.h:9
+msgid "MySQL Server:"
+msgstr "MySQL tjener:"
+
+#: ../MythbuntuControlCentre/tab_mythtv_configuration.glade.h:10
+msgid "Test MySQL Connection"
+msgstr "Test MySQL tilkobling"
+
+#: ../MythbuntuControlCentre/tab_mythtv_configuration.glade.h:11
+msgid "Test Results:"
+msgstr "Test resultater:"
+
+#: ../MythbuntuControlCentre/tab_mythtv_configuration.glade.h:12
+msgid "mythconverg"
+msgstr "mythconverg"
+
+#: ../MythbuntuControlCentre/tab_mythtv_configuration.glade.h:13
+msgid "mythtv"
+msgstr "mythtv"
+
+#: ../MythbuntuControlCentre/tab_network_shares.glade.h:1
+msgid "<b>Music</b>"
+msgstr "<b>Musikk</b>"
+
+#: ../MythbuntuControlCentre/tab_network_shares.glade.h:2
+msgid "<b>Pictures</b>"
+msgstr "<b>Bilder</b>"
+
+#: ../MythbuntuControlCentre/tab_network_shares.glade.h:3
+msgid "<b>Videos</b>"
+msgstr "<b>Videoer</b>"
+
+#: ../MythbuntuControlCentre/tab_network_shares.glade.h:4
+msgid "<big><b>Remote Network Shares</b></big>"
+msgstr "<big><b>Eksterne delte ressurser</b></big>"
+
+#: ../MythbuntuControlCentre/tab_network_shares.glade.h:5
+msgid ""
+"If you have other PCs that you use to store videos, music, or pictures, "
+"these mounts can be configured here.  If you want to share your content, see "
+"the System Services tab."
+msgstr ""
+"Hvis du har andre PC-er som du bruker til å lagre video, musikk eller bilder "
+"kan disse ressursene konfigureres her. Hvis du vil dele ditt innhold - se "
+"System tjenester fanen."
+
+#: ../MythbuntuControlCentre/tab_network_shares.glade.h:6
+msgid "Test Connection"
+msgstr "Test tilkobling"
+
+#: ../MythbuntuControlCentre/tab_network_shares.glade.h:7
+msgid ""
+"[disabled]\n"
+"smb://\n"
+"nfs://"
+msgstr ""
+"[disabled]\n"
+"smb://\n"
+"nfs://"
+
+#: ../MythbuntuControlCentre/tab_network_shares.glade.h:10
+msgid "protocol://SERVER/share"
+msgstr "protocol://SERVER/deling"
+
+#: ../MythbuntuControlCentre/tab_proprietary_drivers.glade.h:1
+msgid "<b>AMD Catalyst Control Center</b>"
+msgstr "<b>AMD Catalyst Kontroll Senter</b>"
+
+#: ../MythbuntuControlCentre/tab_proprietary_drivers.glade.h:2
+msgid "<b>NVIDIA Driver Configuration Utility</b>"
+msgstr "<b>NVIDIA driver konfigurasjon verktøy</b>"
+
+#: ../MythbuntuControlCentre/tab_proprietary_drivers.glade.h:3
+msgid "<b>Restricted Drivers Manager</b>"
+msgstr "<b>Begrenset driverer behandler</b>"
+
+#: ../MythbuntuControlCentre/tab_proprietary_drivers.glade.h:4
+msgid "<b>Ubuntu Display Configuration Utility</b>"
+msgstr "<b>Ubuntu visnings konfigurasjons verktøy</b>"
+
+#: ../MythbuntuControlCentre/tab_proprietary_drivers.glade.h:5
+msgid "<big><b>Proprietary Drivers</b></big>"
+msgstr "<big><b>Proprietære drivere</b></big>"
+
+#: ../MythbuntuControlCentre/tab_proprietary_drivers.glade.h:6
+msgid "Install NVIDIA Settings Utility"
+msgstr ""
+
+#: ../MythbuntuControlCentre/tab_proprietary_drivers.glade.h:7
+msgid "Launch AMDCCCLE"
+msgstr "Kjør AMDCCCLE"
+
+#: ../MythbuntuControlCentre/tab_proprietary_drivers.glade.h:8
+msgid "Launch NVIDIA Settings"
+msgstr "Kjør NVIDIA innstillinger"
+
+#: ../MythbuntuControlCentre/tab_proprietary_drivers.glade.h:9
+msgid "Launch Restricted Drivers Manager"
+msgstr "Launch begrenset driver behandler"
+
+#: ../MythbuntuControlCentre/tab_proprietary_drivers.glade.h:10
+msgid "Launch Xorg Config"
+msgstr "Kjør Xorg konfigurering"
+
+#: ../MythbuntuControlCentre/tab_proprietary_drivers.glade.h:11
+msgid ""
+"Proprietary Graphics Drivers can provide enhanced performance during High "
+"Definition Video playback and Menu Effects.  They are also required for TV-"
+"Output."
+msgstr ""
+"Proprietære grafikk drivere kan gi høyere ytelse ved høy definisjons video "
+"avspilling og meny effekter.  De er også nødvending for TV-ut."
+
+#: ../MythbuntuControlCentre/tab_remote_control.glade.h:1
+msgid "<big><b>Infrared Remotes and Transmitters</b></big>"
+msgstr ""
+
+#: ../MythbuntuControlCentre/tab_remote_control.glade.h:2
+msgid "Choose your IR transmitter from the list of supported blasters below."
+msgstr ""
+
+#: ../MythbuntuControlCentre/tab_remote_control.glade.h:3
+msgid ""
+"Choose your remote control from the list of supported remotes below.  \n"
+"A standard (but further customizable) configuration will be loaded for you."
+msgstr ""
+"Velg din fjernkontroll fra listen over supporterte kontroller under.   \n"
+"En standard (men mer tilpassesverdig) konfigurasjon vil bli lastet for deg."
+
+#: ../MythbuntuControlCentre/tab_remote_control.glade.h:5
+msgid "Configuration:"
+msgstr "Konfigurasjon:"
+
+#: ../MythbuntuControlCentre/tab_remote_control.glade.h:6
+msgid "Device:"
+msgstr ""
+
+#: ../MythbuntuControlCentre/tab_remote_control.glade.h:7
+msgid "Driver:"
+msgstr "Driver:"
+
+#: ../MythbuntuControlCentre/tab_remote_control.glade.h:8
+msgid "Enable a Remote Control"
+msgstr "Aktiver en fjernkontroll"
+
+#: ../MythbuntuControlCentre/tab_remote_control.glade.h:9
+msgid "Enable an IR Transmitter"
+msgstr ""
+
+#: ../MythbuntuControlCentre/tab_remote_control.glade.h:10
+msgid "Generate dynamic button mappings"
+msgstr ""
+
+#: ../MythbuntuControlCentre/tab_remote_control.glade.h:11
+msgid "Module(s):"
+msgstr "Modul(er):"
+
+#: ../MythbuntuControlCentre/tab_remote_control.glade.h:12
+msgid "Remote:"
+msgstr "Kontroll:"
+
+#: ../MythbuntuControlCentre/tab_remote_control.glade.h:13
+msgid "Select Remote lircd.conf"
+msgstr ""
+
+#: ../MythbuntuControlCentre/tab_remote_control.glade.h:14
+msgid "Select Transmitter lircd.conf"
+msgstr ""
+
+#: ../MythbuntuControlCentre/tab_remote_control.glade.h:15
+msgid "Transmitters:"
+msgstr ""
+
+#: ../MythbuntuControlCentre/tab_system_roles.glade.h:1
+msgid "<b>Backend Role</b>"
+msgstr "<b>Bakende rolle</b>"
+
+#: ../MythbuntuControlCentre/tab_system_roles.glade.h:2
+msgid "<b>Desktop Role</b>"
+msgstr "<b>Skrivebords rolle</b>"
+
+#: ../MythbuntuControlCentre/tab_system_roles.glade.h:3
+msgid "<b>Diskless Server</b>"
+msgstr ""
+
+#: ../MythbuntuControlCentre/tab_system_roles.glade.h:4
+msgid "<b>Frontend Role</b>"
+msgstr "<b>Forende rolle</b>"
+
+#: ../MythbuntuControlCentre/tab_system_roles.glade.h:5
+msgid "<big><b>System Roles</b></big>"
+msgstr "<big><b>System roller</b></big>"
+
+#: ../MythbuntuControlCentre/tab_system_roles.glade.h:6
+msgid ""
+"A machine containing a backend role will schedule and record television "
+"shows.  Also, a backend role is needed on a network somewhere for a frontend "
+"role to connect to."
+msgstr ""
+"En maskin som inneholder en bakende roller vil planlegge og ta opp TV -"
+"programmer. Også en bakende rolle er nødvendig på nettverket et sted for at "
+"forende å koble til."
+
+#: ../MythbuntuControlCentre/tab_system_roles.glade.h:7
+msgid ""
+"A machine containing a frontend role will connect to a master backend to "
+"obtain recorded content."
+msgstr ""
+"En maskin som inneholder en forende rolle vil koble til en mester bakende "
+"for å skaffe opptak innhold."
+
+#: ../MythbuntuControlCentre/tab_system_roles.glade.h:8
+msgid ""
+"A system role that will allow you to operate additional Frontend clients "
+"without installing Mythbuntu on them."
+msgstr ""
+
+#: ../MythbuntuControlCentre/tab_system_roles.glade.h:9
+msgid "Add DHCP server"
+msgstr ""
+
+#: ../MythbuntuControlCentre/tab_system_roles.glade.h:10
+msgid ""
+"Although a Mythbuntu machine is intended to be used as an appliance, active "
+"roles may be added, removed, or modified at any time."
+msgstr ""
+"Selv om en Mythbuntu maskin er beregnet for å bli brukt som en komponent, "
+"kan aktive roller bli lagt til, fjernet eller endret når som helst."
+
+#: ../MythbuntuControlCentre/tab_system_roles.glade.h:12
+msgid "Frontend"
+msgstr "Forende"
+
+#: ../MythbuntuControlCentre/tab_system_roles.glade.h:13
+msgid ""
+"If you later decide that you would like to use this machine as a desktop, "
+"you can convert a machine from an applicance into a standalone machine that "
+"also has Mythbuntu configured."
+msgstr ""
+"Hvis du bestemmer senere at du vil bruke denne maskinen som en "
+"skrivebordsmaskin, kan du konvertere maskinen fra en komponent til en "
+"alenestående maskin som har Mythbuntu konfigurert."
+
+#: ../MythbuntuControlCentre/tab_system_roles.glade.h:14
+msgid "Kubuntu Desktop"
+msgstr "Kubuntu skrivebord"
+
+#: ../MythbuntuControlCentre/tab_system_roles.glade.h:15
+msgid "No Backend"
+msgstr "Ingen bakende"
+
+#: ../MythbuntuControlCentre/tab_system_roles.glade.h:16
+msgid "No Frontend"
+msgstr "Ingen forende"
+
+#: ../MythbuntuControlCentre/tab_system_roles.glade.h:17
+msgid "Primary Backend"
+msgstr "Primær bakende"
+
+#: ../MythbuntuControlCentre/tab_system_roles.glade.h:18
+msgid "Secondary Backend"
+msgstr "Sekundær bakende"
+
+#: ../MythbuntuControlCentre/tab_system_roles.glade.h:19
+msgid "Ubuntu Desktop"
+msgstr "Ubuntu skrivebord"
+
+#: ../MythbuntuControlCentre/tab_system_roles.glade.h:20
+msgid "Xubuntu Deskop"
+msgstr ""
+
+#: ../MythbuntuControlCentre/tab_system_services.glade.h:1
+msgid "<b>MySQL Service</b>"
+msgstr "<b>MySQL tjeneste</b>"
+
+#: ../MythbuntuControlCentre/tab_system_services.glade.h:2
+msgid "<b>NFS Service</b>"
+msgstr "<b>NFS tjeneste</b>"
+
+#: ../MythbuntuControlCentre/tab_system_services.glade.h:3
+msgid "<b>Note</b>: Pass must be >= 6 characters."
+msgstr "<b>Notat</b>: Passord må være >= 6 karakterer."
+
+#: ../MythbuntuControlCentre/tab_system_services.glade.h:4
+msgid "<b>SSH Service</b>"
+msgstr "<b>SSH tjeneste</b>"
+
+#: ../MythbuntuControlCentre/tab_system_services.glade.h:5
+msgid "<b>Samba Service</b>"
+msgstr "<b>Samba tjeneste</b>"
+
+#: ../MythbuntuControlCentre/tab_system_services.glade.h:6
+msgid "<b>VNC Service</b>"
+msgstr "<b>VNC tjeneste</b>"
+
+#: ../MythbuntuControlCentre/tab_system_services.glade.h:7
+msgid "<big><b>System Services</b></big>"
+msgstr "<big><b>System tjeneste</b></big>"
+
+#: ../MythbuntuControlCentre/tab_system_services.glade.h:8
+msgid ""
+"Disable\n"
+"Enable"
+msgstr ""
+"Deaktiver\n"
+"Aktiver"
+
+#: ../MythbuntuControlCentre/tab_system_services.glade.h:10
+msgid "Enter a password to be used: "
+msgstr "Skriv et passord som vil bli brukt: "
+
+#: ../MythbuntuControlCentre/tab_system_services.glade.h:11
+msgid ""
+"If you will be using a remote Frontend or Backend, you will need to enable "
+"MySQL on your ethernet interface."
+msgstr ""
+"Hvis du vil bruke en ekstern forende eller bakende, vil du trenge å aktivere "
+"MySQL på ditt nettverkskort."
+
+#: ../MythbuntuControlCentre/tab_system_services.glade.h:12
+msgid "NFS provides filesharing to other Unix & Linux clients."
+msgstr "NFS sørger for en fildeling til andre Unix & Linux klienter."
+
+#: ../MythbuntuControlCentre/tab_system_services.glade.h:13
+msgid ""
+"SSH is a very commonly used protocol for console based remote administration "
+"of a machine."
+msgstr ""
+"SSH er en mye brukt protokoll for en konsoll basert fjernadministrasjon av "
+"en maskin."
+
+#: ../MythbuntuControlCentre/tab_system_services.glade.h:14
+msgid ""
+"Samba provides Windows File Sharing services.  These can then be accessed "
+"via Windows or any Samba client."
+msgstr ""
+"Samba sørger for en Windows fildelingstjeneste. Disse kan bli aksessert via "
+"Windows eller en samba klient."
+
+#: ../MythbuntuControlCentre/tab_system_services.glade.h:15
+msgid ""
+"These services are typically used by people setting up a Mythbuntu box.\n"
+"Applicable services that are already installed can be reconfigured by "
+"selecting <b>Reconfigure</b>."
+msgstr ""
+"Disse tjeneste er typisk brukt for folk som setter opp en Mythbuntu boks.\n"
+"Anvendelige tjenester som allerede er installert kan blir rekonfigurert ved "
+"å velge <b>Rekonfigurer</b>."
+
+#: ../MythbuntuControlCentre/tab_system_services.glade.h:17
+msgid ""
+"VNC is a very commonly used protocol for graphical remote administration and "
+"control."
+msgstr "VNC er en mye brukt for grafisk fjernadministrasjon og kontroll."
+
+#: ../MythbuntuControlCentre/tab_diskless.glade.h:1
+msgid "00:00:00:00:00"
+msgstr ""
+
+#: ../MythbuntuControlCentre/tab_diskless.glade.h:2
+msgid "<b>Client Bootable Flash Drive</b>"
+msgstr ""
+
+#: ../MythbuntuControlCentre/tab_diskless.glade.h:3
+msgid "<b>Client Maintenance</b>"
+msgstr ""
+
+#: ../MythbuntuControlCentre/tab_diskless.glade.h:4
+msgid "<b>Server Preparation</b>"
+msgstr ""
+
+#: ../MythbuntuControlCentre/tab_diskless.glade.h:5
+msgid "<big><b>Diskless Server</b></big>"
+msgstr ""
+
+#: ../MythbuntuControlCentre/tab_diskless.glade.h:6
+msgid "Allow unsigned packages"
+msgstr ""
+
+#: ../MythbuntuControlCentre/tab_diskless.glade.h:7
+msgid ""
+"Although its possible to update applications from directly on a client "
+"machine, it is more efficient to do so from the server, and your machines "
+"will perform better."
+msgstr ""
+
+#: ../MythbuntuControlCentre/tab_diskless.glade.h:8
+msgid "Build Image"
+msgstr ""
+
+#: ../MythbuntuControlCentre/tab_diskless.glade.h:9
+msgid "CPU architecture of your clients:"
+msgstr ""
+
+#: ../MythbuntuControlCentre/tab_diskless.glade.h:10
+msgid "Choose your image:"
+msgstr ""
+
+#: ../MythbuntuControlCentre/tab_diskless.glade.h:11
+msgid "Commit Changes"
+msgstr ""
+
+#: ../MythbuntuControlCentre/tab_diskless.glade.h:12
+msgid "Control Centre"
+msgstr ""
+
+#: ../MythbuntuControlCentre/tab_diskless.glade.h:13
+msgid "Delete Image"
+msgstr ""
+
+#: ../MythbuntuControlCentre/tab_diskless.glade.h:14
+msgid "Flash Drive:"
+msgstr ""
+
+#: ../MythbuntuControlCentre/tab_diskless.glade.h:15
+msgid ""
+"Mythbuntu has the ability to serve frontend diskless images to client "
+"machines.  This prevents you having to make any changes to the existing "
+"operating system as well as centralizing all maintenance at one main server."
+msgstr ""
+
+#: ../MythbuntuControlCentre/tab_diskless.glade.h:16
+msgid "NIC Connect to Client:"
+msgstr ""
+
+#: ../MythbuntuControlCentre/tab_diskless.glade.h:17
+msgid "Open Terminal"
+msgstr ""
+
+#: ../MythbuntuControlCentre/tab_diskless.glade.h:18
+msgid "Wake on LAN - Enter MAC:"
+msgstr ""
+
+#: ../MythbuntuControlCentre/tab_diskless.glade.h:19
+msgid "Write Drive"
+msgstr ""
+
+#: ../MythbuntuControlCentre/tab_diskless.glade.h:20
+msgid "[None]"
+msgstr ""
+
+#: ../MythbuntuControlCentre/progress_dialogs.glade.h:1
+msgid "<big><b>Control Centre Progress</b></big>"
+msgstr ""
+
+#: ../MythbuntuControlCentre/progress_dialogs.glade.h:2
+msgid "Details"
+msgstr ""
+
+#: ../MythbuntuControlCentre/progress_dialogs.glade.h:3
+msgid "Installation Details"
+msgstr ""
+
+#: ../MythbuntuControlCentre/tab_proprietary_codecs.glade.h:1
+msgid ""
+"<b>NOTE</b>: The packages installable on this page are not officially "
+"supported by Mythbuntu or Ubuntu  for legal reasons.  The Medibuntu team is "
+"responsible for them.  They are only provided here for convenience to "
+"Mythbuntu and Ubuntu users."
+msgstr ""
+
+#: ../MythbuntuControlCentre/tab_proprietary_codecs.glade.h:2
+msgid "<big><b>Proprietary Codec Support</b></big>"
+msgstr ""
+
+#: ../MythbuntuControlCentre/tab_proprietary_codecs.glade.h:3
+msgid ""
+"Although most media players support wmv3 via\n"
+"an open source implementation of the codec, this is\n"
+"the codec package from windows to include support\n"
+"for many proprietary formats instead."
+msgstr ""
+
+#: ../MythbuntuControlCentre/tab_proprietary_codecs.glade.h:7
+msgid "Enable Medibuntu Proprietary Codec Support"
+msgstr ""
+
+#: ../MythbuntuControlCentre/tab_proprietary_codecs.glade.h:8
+msgid "Enable ffmpeg"
+msgstr ""
+
+#: ../MythbuntuControlCentre/tab_proprietary_codecs.glade.h:9
+msgid "Enable libdvdcss2"
+msgstr ""
+
+#: ../MythbuntuControlCentre/tab_proprietary_codecs.glade.h:10
+msgid "Enable w32codecs"
+msgstr ""
+
+#: ../MythbuntuControlCentre/tab_proprietary_codecs.glade.h:11
+msgid "Enable w64codecs"
+msgstr ""
+
+#: ../MythbuntuControlCentre/tab_proprietary_codecs.glade.h:12
+msgid "For more information, you can visit the Medibuntu website."
+msgstr ""
+
+#: ../MythbuntuControlCentre/tab_proprietary_codecs.glade.h:13
+msgid "This is required if you would like to play commercial DVDs."
+msgstr ""
+
+#: ../MythbuntuControlCentre/tab_advanced.glade.h:1
+msgid "<b>MySQL</b>"
+msgstr ""
+
+#: ../MythbuntuControlCentre/tab_advanced.glade.h:2
+msgid "<b>Synaptic Package Manager</b>"
+msgstr ""
+
+#: ../MythbuntuControlCentre/tab_advanced.glade.h:3
+msgid "<b>Terminal</b>"
+msgstr ""
+
+#: ../MythbuntuControlCentre/tab_advanced.glade.h:4
+msgid "<b>Update Manager</b>"
+msgstr ""
+
+#: ../MythbuntuControlCentre/tab_advanced.glade.h:5
+msgid "<big><b>Advanced Mangement</b></big>"
+msgstr ""
+
+#: ../MythbuntuControlCentre/tab_advanced.glade.h:6
+msgid "Enable IVTV Capture Card Tweak (Experimental)"
+msgstr ""
+
+#: ../MythbuntuControlCentre/tab_advanced.glade.h:7
+msgid "Enable MySQL tweaks (available if mysql-server is installed)"
+msgstr ""
+
+#: ../MythbuntuControlCentre/tab_advanced.glade.h:8
+msgid "Enable RTC Video Tweak (Experimental)"
+msgstr ""
+
+#: ../MythbuntuControlCentre/tab_advanced.glade.h:9
+msgid "Enable daily MythTV database optimization/repair"
+msgstr ""
+
+#: ../MythbuntuControlCentre/tab_advanced.glade.h:10
+msgid "Enable daily defragmentation of your XFS file systems"
+msgstr ""
+
+#: ../MythbuntuControlCentre/tab_advanced.glade.h:11
+msgid "Launch Synaptic"
+msgstr ""
+
+#: ../MythbuntuControlCentre/tab_advanced.glade.h:12
+msgid "Launch Terminal"
+msgstr ""
+
+#: ../MythbuntuControlCentre/tab_advanced.glade.h:13
+msgid "Launch Update Manager"
+msgstr ""
+
+#: ../MythbuntuControlCentre/tab_advanced.glade.h:14
+msgid "Optimize Tables"
+msgstr ""
+
+#: ../MythbuntuControlCentre/tab_advanced.glade.h:15
+msgid ""
+"These applications aren't necessary for setting up a Mythbuntu box, but can "
+"be useful for adding features not found in the control centre currently."
+msgstr ""
